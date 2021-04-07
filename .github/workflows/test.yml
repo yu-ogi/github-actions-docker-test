@@ -2,7 +2,8 @@ name: "docker action test"
 
 on:
   push:
-    branches: [ $default-branch ]
+    branches:
+      - main
 
 jobs:
   test:
