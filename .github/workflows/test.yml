@@ -1,0 +1,14 @@
+name: "docker action test"
+
+on:
+  push:
+    branches: [ $default-branch ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check out repository code
+      uses: actions/checkout@v2
+    - name: Docker action test
+      uses: ./
